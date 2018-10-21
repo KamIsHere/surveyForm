@@ -1,0 +1,40 @@
+
+body {
+  background-color:ivory;
+  text-align: center;
+}
+
+.form {
+  background-color: lightblue;
+  border-radius: 20px;
+  margin: 4em;
+}
+
+#title {
+  color: red;
+}
+
+#description {
+font-style: oblique;
+font-weight: bold;
+}
+
+ p {
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 20px;
+   font-weight: bold;
+  
+ }
+
+ textarea {
+   font-size: 20px;
+ }
+
+ checkbox {
+   font-size: 20px;
+ }
+
+ button {
+   font-size: 20px;
+   border-radius: 5px;
+ }

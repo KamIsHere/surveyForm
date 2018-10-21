@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="survey.css">
+  </head>
+
+  <body>
+    <div class="form">
+      <h1 id="title">Survey Form</h1>
+
+      <p id="description">
+        This is a brief survey to get a better idea of the different
+        types of music people listen to.
+      </p>
+
+      <div class="survey">
+        <form id="survey-form">
+          <label id="name-label">
+            <p>*Name</p>
+            <input id="name" placeholder="Your Name" type="text" required>
+          </label>
+
+          <label id="email-label">
+            <p>*Email</p>
+            <input id="email" placeholder="Your Email" type="email" required>
+          </label>
+
+          <label id="number-label">
+            <p>*Age</p>
+            <input id="number" placeholder="age" type="number" min="1" max="115" required>
+          </label>
+
+          <div class="nationality">
+            <p>What's your nationality?</p>
+            <br />
+            <select name="nationality">
+              <option value="native">American Indian or Alaska Native</option>
+              <option value="asian"> Black or African American</option>
+              <option value="islander">Native Hawaiian or Other Pacific Islander</option>
+              <option value="white">White</option>
+              <option value="hispanic">Hispanic or Latino or Spanish Origin</option>
+              <option value="notHispanic"> Not Hispanic or Latino or Spanish Origin</option>
+            </select>
+          </div>
+
+          <div class="devices">
+            <p>What device do you use for music on a daily basis?</p>
+            <br />
+
+            <select id="dropdown" name="devices">
+              <option value="phone">Phone</option>
+              <option value="tv">TV</option>
+              <option value="tablet">Tablet</option>
+              <option value="computer">Computer</option>
+              <option value="gameConsole">Game Console</option>
+              <option value="car">Car Stereo</option>
+            </select>
+          </div>
+
+          <div class="genre">
+            <p>Please select your favorite genre:
+              <br />
+              <input type="radio" name="genre" value="rock" checked="checked" /> Rock
+              <input type="radio" name="genre" value="pop" /> Pop
+              <input type="radio" name="genre" value="jazz" /> Jazz
+              <input type="radio" name="genre" value="hip-hop" /> Hip-Hop
+              <input type="radio" name="genre" value="r&b" /> R&B
+              <input type="radio" name="genre" value="country" /> Country
+            </p>
+          </div>
+
+          
+            <p>Please select the music service(s) that you are currently using:
+              <br />
+              <label class="container">
+              <input type="checkbox" name="service" value="itunes" checked="checked" /> iTunes
+              <input type="checkbox" name="service" value="tidal" /> Tidal
+              <input type="checkbox" name="service" value="spotify" /> Spotify
+              <input type="checkbox" name="service" value="pandora" /> Pandora
+              <input type="checkbox" name="service" value="iheartradio" /> iHeartRadio
+              <input type="checkbox" name="service" value="rhapsody" /> Rhapsody
+              <input type="checkbox" name="service" value="sirius" /> Sirius XM
+              <input type="checkbox" name="service" value="youtube" /> YouTube Red
+            </p>
+          </label>
+
+          <div class="feedback">
+            <textarea name="text" placeholder="Any feedback would be great." /></textarea>
+          </div>
+          <button id="submit">Send</button>
+        </form>
+      </div>
+      <footer></footer>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </div>
+  </body>
+
+</html>
